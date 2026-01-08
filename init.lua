@@ -2,4 +2,8 @@
 require("config.lazy")
 require("user.emmet")
 
-vim.lsp.inlay_hint.enable(false)
+vim.api.nvim_create_autocmd("LspAttach", {
+  callback = function(args)
+    vim.lsp.inlay_hint.enable(false, { bufnr = args.buf })
+  end,
+})
