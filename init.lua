@@ -4,6 +4,7 @@ end
 
 require("config.lazy")
 require("user.emmet")
+require("config.refs")
 
 vim.api.nvim_create_autocmd("LspAttach", {
   callback = function(args)
