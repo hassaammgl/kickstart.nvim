@@ -2,11 +2,7 @@ return {
   {
     "navarasu/onedark.nvim",
     priority = 1000, -- make sure to load this before all the other start plugins
-  },
-  {
-    "baliestri/aura-theme",
     lazy = false,
-    priority = 1000,
   },
   {
     "oxfist/night-owl.nvim",
@@ -26,6 +22,7 @@ return {
   {
     "KijitoraFinch/nanode.nvim",
     priority = 1000,
+    lazy = false,
   },
   {
     "forest-nvim/sequoia.nvim",
@@ -35,6 +32,7 @@ return {
   {
     "adibhanna/forest-night.nvim",
     priority = 1000,
+    lazy = false,
   },
   {
     "MartelleV/kaimandres.nvim",
@@ -43,10 +41,13 @@ return {
   },
   {
     "samueljoli/cyberpunk.nvim",
+    priority = 1000,
   },
   {
     "antonyz89/electron-vue.nvim",
     dependencies = { "rktjmp/lush.nvim" },
+    lazy = false,
+    priority = 1000,
   },
   {
     "sanzharkuandyk/nagisa.nvim",
